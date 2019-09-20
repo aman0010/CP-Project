@@ -1,0 +1,27 @@
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\x86\sqlite3.dll
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\x64\sqlite3.dll
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\Expense Tracker.exe.config
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\Expense Tracker.exe
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\Expense Tracker.pdb
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\EntityFramework.dll
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\System.Data.SQLite.dll
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\EntityFramework.xml
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\System.Data.SQLite.xml
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense Tracker.csprojAssemblyReference.cache
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.Properties.Resources.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.signup.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense Tracker.csproj.GenerateResource.cache
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense Tracker.csproj.CoreCompileInputs.cache
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense Tracker.csproj.CopyComplete
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense Tracker.exe
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense Tracker.pdb
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.login.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.abstract_view.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.dashboard.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.expense.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.add_transaction.resources
