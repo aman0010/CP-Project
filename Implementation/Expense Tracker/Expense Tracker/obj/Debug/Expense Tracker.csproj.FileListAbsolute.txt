@@ -22,6 +22,18 @@ C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense Tr
 C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense Tracker.pdb
 C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.login.resources
 C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.abstract_view.resources
-C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.dashboard.resources
-C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.expense.resources
 C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.add_transaction.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.transaction.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.graph.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.category.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.abstract_category.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.abstract_transaction.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.add_category.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.Resources.edit_transaction.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.edit_category.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.edit_transaction.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense_Tracker.View.report.resources
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\Expense Tracker.exe.manifest
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\bin\Debug\Expense Tracker.application
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense Tracker.exe.manifest
+C:\Users\aman0\source\repos\Expense Tracker\Expense Tracker\obj\Debug\Expense Tracker.application

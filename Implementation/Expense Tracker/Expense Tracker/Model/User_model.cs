@@ -24,44 +24,60 @@ namespace Expense_Tracker.Model
         public string Lastname { get => lastname; set => lastname = value; }
         public string Password { get => password; set => password = value; }
 
-        public Exception register() {
+        public string register() {
             try
             {
                 conn.Open();
                 query = "INSERT INTO users VALUES ('" + username + "','" + firstname + "','" + lastname + "','" + password + "')";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.ExecuteNonQuery();
+                return null;
             }
             catch (MissingPrimaryKeyException ex)
             {
-                return ex;
+                return ex.Message;
             }
             catch (SqlException ex)
             {
-                return ex;
+                if (ex.Number == 2627)
+                {
+                    return "This username is already taken";
+                }
+                return ex.Message;
             }
             catch (Exception ex)
             {
-                return ex;
+                return ex.Message;
             }
             finally
             {
                 conn.Close();
             }
-            return null;            
         }
-        public bool checkuservalitity() {
-            conn.Open();
-            query = "SELECT * FROM users WHERE username='" + username + "' AND pwd='" + password + "'";
-            SqlDataAdapter da = new SqlDataAdapter(query, conn);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            conn.Close();
-            if (dt.Rows.Count > 0){
-                return true;
-            }
+        public string checkuservalitity() {
+            try
+            {
+                conn.Open();
+                query = "SELECT * FROM users WHERE username='" + username + "' AND pwd='" + password + "'";
+                SqlDataAdapter da = new SqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    return null;
+                }
 
-            return false;
+                return "Username and Password not matched!";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            
         }
     }
 }

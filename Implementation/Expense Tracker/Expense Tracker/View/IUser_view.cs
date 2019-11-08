@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Expense_Tracker.View
 {
-    interface IUser_view
+    public interface IUser_view
     {
         string username { get; set; }
+        string password { get; set; }
+
+        void message(string msg);
+        void success();
     }
 }

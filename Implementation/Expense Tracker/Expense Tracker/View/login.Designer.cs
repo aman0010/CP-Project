@@ -73,13 +73,14 @@
             this.txt_username.Location = new System.Drawing.Point(391, 178);
             this.txt_username.Name = "txt_username";
             this.txt_username.Size = new System.Drawing.Size(166, 30);
-            this.txt_username.TabIndex = 2;
+            this.txt_username.TabIndex = 1;
             // 
             // txt_password
             // 
             this.txt_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_password.Location = new System.Drawing.Point(391, 242);
             this.txt_password.Name = "txt_password";
+            this.txt_password.PasswordChar = '*';
             this.txt_password.Size = new System.Drawing.Size(166, 30);
             this.txt_password.TabIndex = 2;
             // 
@@ -111,7 +112,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(774, 496);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(75, 20);
-            this.linkLabel1.TabIndex = 5;
+            this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Sign Up";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);

@@ -15,6 +15,7 @@ namespace Expense_Tracker
     public partial class login : Form,IUser_view
     {
         user_presenter presenter;
+        validation validate = new validation();
         public login()
         {
             InitializeComponent();
@@ -33,20 +34,32 @@ namespace Expense_Tracker
             }
         }
 
+        public string password
+        {
+            get
+            {
+                return txt_password.Text;
+            }
+            set
+            {
+                txt_password.Text = value;
+            }
+        }
+
         private void Btn_login_Click(object sender, EventArgs e)
         {
-            string result;
-            username = txt_username.Text;
-            string password = txt_password.Text;
-            result=presenter.checkuservalitity(username, password);
-            MessageBox.Show(result);
-            
-            if (result == "Login successful!") {
-                this.Hide();
-                abstract_view frm = new dashboard(username);
-                frm.ShowDialog();
-                this.Close();
+            Dictionary<string, string> dataValidate = new Dictionary<string, string>();
+            dataValidate.Add("username", username);
+            dataValidate.Add("password", password);
+
+            string validate_msg=validate.isEmpty(dataValidate);
+            if (validate_msg!=null)
+            {
+                message(validate_msg);
+                return;
             }
+
+            presenter.checkuservalitity(username, password);                     
         }
 
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -56,5 +69,20 @@ namespace Expense_Tracker
             frm.ShowDialog();
             this.Close();
         }
+
+        public void message(string msg)
+        {
+            MessageBox.Show(msg);
+        }
+
+        public void success()
+        {
+            this.Hide();
+            abstract_view frm = new transaction(username);
+            frm.ShowDialog();
+            this.Close();
+        }
+
+        
     }
 }

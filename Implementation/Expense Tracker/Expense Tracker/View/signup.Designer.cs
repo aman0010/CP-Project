@@ -58,7 +58,7 @@
             this.btn_signup_signup.Location = new System.Drawing.Point(249, 479);
             this.btn_signup_signup.Name = "btn_signup_signup";
             this.btn_signup_signup.Size = new System.Drawing.Size(155, 42);
-            this.btn_signup_signup.TabIndex = 18;
+            this.btn_signup_signup.TabIndex = 6;
             this.btn_signup_signup.Text = "Sign Up";
             this.btn_signup_signup.UseVisualStyleBackColor = true;
             this.btn_signup_signup.Click += new System.EventHandler(this.Btn_signup_signup_Click);
@@ -114,8 +114,9 @@
             this.txt_signup_repassword.Location = new System.Drawing.Point(129, 382);
             this.txt_signup_repassword.Multiline = true;
             this.txt_signup_repassword.Name = "txt_signup_repassword";
+            this.txt_signup_repassword.PasswordChar = '#';
             this.txt_signup_repassword.Size = new System.Drawing.Size(275, 30);
-            this.txt_signup_repassword.TabIndex = 17;
+            this.txt_signup_repassword.TabIndex = 5;
             this.txt_signup_repassword.UseSystemPasswordChar = true;
             // 
             // txt_signup_password
@@ -124,8 +125,9 @@
             this.txt_signup_password.Location = new System.Drawing.Point(129, 321);
             this.txt_signup_password.Multiline = true;
             this.txt_signup_password.Name = "txt_signup_password";
+            this.txt_signup_password.PasswordChar = '#';
             this.txt_signup_password.Size = new System.Drawing.Size(275, 30);
-            this.txt_signup_password.TabIndex = 16;
+            this.txt_signup_password.TabIndex = 4;
             this.txt_signup_password.UseSystemPasswordChar = true;
             // 
             // txt_signup_lname
@@ -135,7 +137,7 @@
             this.txt_signup_lname.Multiline = true;
             this.txt_signup_lname.Name = "txt_signup_lname";
             this.txt_signup_lname.Size = new System.Drawing.Size(131, 30);
-            this.txt_signup_lname.TabIndex = 15;
+            this.txt_signup_lname.TabIndex = 3;
             // 
             // txt_signup_fname
             // 
@@ -144,7 +146,7 @@
             this.txt_signup_fname.Multiline = true;
             this.txt_signup_fname.Name = "txt_signup_fname";
             this.txt_signup_fname.Size = new System.Drawing.Size(131, 30);
-            this.txt_signup_fname.TabIndex = 9;
+            this.txt_signup_fname.TabIndex = 2;
             // 
             // txt_signup_username
             // 
@@ -153,7 +155,7 @@
             this.txt_signup_username.Multiline = true;
             this.txt_signup_username.Name = "txt_signup_username";
             this.txt_signup_username.Size = new System.Drawing.Size(275, 30);
-            this.txt_signup_username.TabIndex = 8;
+            this.txt_signup_username.TabIndex = 1;
             // 
             // btn_signup_back
             // 
@@ -161,7 +163,7 @@
             this.btn_signup_back.Location = new System.Drawing.Point(819, 123);
             this.btn_signup_back.Name = "btn_signup_back";
             this.btn_signup_back.Size = new System.Drawing.Size(131, 42);
-            this.btn_signup_back.TabIndex = 20;
+            this.btn_signup_back.TabIndex = 7;
             this.btn_signup_back.Text = "Back";
             this.btn_signup_back.UseVisualStyleBackColor = true;
             this.btn_signup_back.Click += new System.EventHandler(this.Btn_signup_back_Click);

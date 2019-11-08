@@ -13,9 +13,14 @@ namespace Expense_Tracker.View
 {
     public partial class signup : Form,IUser_view
     {
+        validation validate=new validation();
+        user_presenter presenter;
+
+
         public signup()
         {
             InitializeComponent();
+            presenter = new user_presenter(this);
         }
         public string username
         {
@@ -75,13 +80,29 @@ namespace Expense_Tracker.View
 
         private void Btn_signup_signup_Click(object sender, EventArgs e)
         {
-            user_presenter presenter = new user_presenter(this);
-            string msg = presenter.register(username, firstname, lastname, password);
-            MessageBox.Show(msg);
-            if (msg == "Registration successful!")
+            Dictionary<string, string> dataValidate = new Dictionary<string, string>();
+            dataValidate.Add("username", username);
+            dataValidate.Add("Firstname", firstname);
+            dataValidate.Add("Lastname", lastname);
+            dataValidate.Add("password", password);
+            dataValidate.Add("re-password", re_password);
+
+            string validate_msg;
+            validate_msg = validate.isEmpty(dataValidate);
+            if (validate_msg != null)
             {
-                btn_signup_back.PerformClick();
+                message(validate_msg);
+                return;
             }
+
+            validate_msg = validate.match(password, re_password);
+            if (validate_msg != null)
+            {
+                message(validate_msg);
+                return;
+            }
+
+            presenter.register(username, firstname, lastname, password);
         }
 
         private void Btn_signup_back_Click(object sender, EventArgs e)
@@ -90,6 +111,16 @@ namespace Expense_Tracker.View
             login frm = new login();
             frm.ShowDialog();
             this.Close();
+        }
+
+        public void message(string msg)
+        {
+            MessageBox.Show(msg);
+        }
+
+        public void success()
+        {
+            btn_signup_back.PerformClick();
         }
     }
 }

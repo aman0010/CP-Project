@@ -11,55 +11,37 @@ using Expense_Tracker.Presenter;
 
 namespace Expense_Tracker.View
 {
-    public partial class add_transaction : Form
+    public partial class add_transaction : abstract_transaction
     {
-        main_presenter presenter;
-        string username = dashboard.username;
+        string username = transaction.Username;
+
         public add_transaction()
         {
             InitializeComponent();
         }
 
-        public int amount
+        private void Add_transaction_Load(object sender, EventArgs e)
         {
-            get
-            {
-                return Convert.ToInt32(Math.Round(num_amount.Value));
-            }
-            set
-            {
-                num_amount.Value = value;
-            }
+            form("add");
         }
 
-        public DateTime date
+        public override void Btn_action_Click(object sender, EventArgs e)
         {
-            get
-            {
-                return dateTimePicker.Value;
-            }
-            set
-            {
-                dateTimePicker.Value = value;
-            }
-        }
+            string validate_msg;
+            Dictionary<string, string> dataValidate = new Dictionary<string, string>();
+            dataValidate.Add("Type", type);
+            dataValidate.Add("Amount", amount.ToString());
+            dataValidate.Add("Category", category);
 
-        public string category
-        {
-            get
+            validate_msg = validate.isEmpty(dataValidate);
+            if (validate_msg != null)
             {
-                return combo_category.Text;
+                MessageBox.Show(validate_msg);
+                return;
             }
-            set
-            {
-                combo_category.Text = value;
-            }
-        }
 
-        private void Btn_add_Click(object sender, EventArgs e)
-        {
-            presenter = new main_presenter();
-            MessageBox.Show(presenter.insert_expense(amount, date, category, username));
+            string msg = presenter.add(type, amount, date, category, description, username);
+            MessageBox.Show(msg);
         }
     }
 }
